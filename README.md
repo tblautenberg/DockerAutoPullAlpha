@@ -18,3 +18,10 @@ Then move down to the target folder by cd target
 Run java -jar YOURJARNAME.jar and it should work 🥇
 
 Remember to tell it where it should make a folder, and from what repo it should download!
+
+
+**** TODO ****
+
+Make docker file complete so it's acutally functioning.
+
+Upload detailed UML over what the F is going on - sometimes it gets a bit frisky (still learning Maven and Docker)
