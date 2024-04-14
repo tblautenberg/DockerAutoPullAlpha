@@ -9,19 +9,21 @@ Right now it utlizes maven shader plugin, and the following dependencies;
 * Commons IO (Apache)
 * Junit for testing
 
-To run the program first clone it to your machine (you need maven - i dident use a wrapper for it). Then run "mvn clean install" inside of your folder where the src, target and pom file is located.
+You can acsess it via docker by building a image with:
 
-After the buld is done, your are getting a FAT JAR (also refered to as Uber JAR), that includes all the dependencies and the main program.
+docker build -t jap (jap for java auto pull)
 
-Then move down to the target folder by cd target
+Then create a container with "docker run --name jaap jap" - this should run the docker auto puller and the program (only docker auto puller is currently working)
 
-Run java -jar YOURJARNAME.jar and it should work 🥇
+OR you can run "docker run -it --name jaap jap /bin/bash" 
 
-Remember to tell it where it should make a folder, and from what repo it should download!
+Now you have full acsess to the Ubuntu system, and can test the two pulled down programs as you see fit. Use this command to run your jars "java -jar YOURJARNAME.jar" 🥇
+
+Remember to edit paths and folder names in the app.java, and from what repo it should download!
 
 
 **** TODO ****
 
-Make docker file complete so it's acutally functioning.
+Make .sh file to run multiple commands when the container is started
 
-Upload detailed UML over what the F is going on - sometimes it gets a bit frisky (still learning Maven and Docker)
+More UML :)
