@@ -9,7 +9,7 @@ public class App {
     public static void main(String[] args) throws IOException {
 
         // Sti til den lokale mappen for repository'et
-        String localRepoDirPath = "C:\\Users\\45244\\Desktop\\TestMappe";
+        String localRepoDirPath = "/app/target-repo";
 
         // URL'en for det fjerne repository, som skal klones
         String remoteRepoURL = "https://github.com/tblautenberg/JavaQuest--Textventure-Odyssey.git";

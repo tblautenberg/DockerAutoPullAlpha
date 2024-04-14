@@ -8,6 +8,23 @@ RUN apt-get update && \
 # Set the working directory
 WORKDIR /app
 
-# Copy the JavaDockerContainerAutoPull and DockerTargetProgram directories
+# Copy the JavaDockerContainerAutoPull directory
 COPY JavaDockerContainerAutoPull /app/JavaDockerContainerAutoPull
-COPY DockerTargetProgram /app/DockerTargetProgram
+
+# Change working directory to the JavaDockerContainerAutoPull directory
+WORKDIR /app/JavaDockerContainerAutoPull
+
+# Build the Java project using Maven
+RUN mvn clean package
+
+# Move the built JAR file to the /app directory
+RUN mv target/JavaDockerContainerAutoPull-1.0-SNAPSHOT.jar /app
+
+# Set the working directory back to /app
+WORKDIR /app
+
+# Specify the /app directory as a volume
+VOLUME /app
+
+# Specify the command to run on container startup
+CMD ["java", "-jar", "JavaDockerContainerAutoPull-1.0-SNAPSHOT.jar"]
