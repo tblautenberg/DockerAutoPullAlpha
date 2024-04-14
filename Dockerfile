@@ -23,8 +23,5 @@ RUN mv target/JavaDockerContainerAutoPull-1.0-SNAPSHOT.jar /app
 # Set the working directory back to /app
 WORKDIR /app
 
-# Specify the /app directory as a volume
-VOLUME /app
-
 # Specify the command to run on container startup
 CMD ["java", "-jar", "JavaDockerContainerAutoPull-1.0-SNAPSHOT.jar"]

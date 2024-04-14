@@ -12,7 +12,7 @@ public class App {
         String localRepoDirPath = "/app/target-repo";
 
         // URL'en for det fjerne repository, som skal klones
-        String remoteRepoURL = "https://github.com/tblautenberg/JavaQuest--Textventure-Odyssey.git";
+        String remoteRepoURL = "https://github.com/tblautenberg/DockerAutoPullTarget";
 
         // Tjek om target mappen eksisterer, hvis ikke, så opret den
         File targetDir = new File(localRepoDirPath);
