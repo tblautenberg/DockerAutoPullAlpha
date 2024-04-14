@@ -24,6 +24,6 @@ Remember to edit paths and folder names in the app.java, and from what repo it s
 
 **** TODO ****
 
-Make .sh file to run multiple commands when the container is started
+Make .sh file to run multiple commands when the container is started. Right now we only build the program via maven, and runs it to download target repo. We need to make it so we acutally also builds the pulled down repo into a fat jar, and runs it.
 
 More UML :)
