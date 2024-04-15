@@ -15,7 +15,7 @@ docker build -t jap (jap for java auto pull) --> docker run -it --name jaap jap
 
 This will build the JavaDockerAutoPull, inside of the container, and run a bashscript to run it, and build/run the JAR from target-repo.
 
-Remember to edit paths and folder names in the app.java, and from what repo it should download! Currently creating a folder /app/target-repo inside the container. Target project is https://github.com/tblautenberg/DockerAutoPullTarget
+Remember to edit paths and folder names in the app.java, and from what repo it should download! Currently creating a folder /app/target-repo inside the container. Default target project is https://github.com/tblautenberg/DockerAutoPullTarget
 
 Small diagram of how it works.
 
