@@ -19,7 +19,7 @@ OR you can run "docker run -it --name jaap jap /bin/bash"
 
 Now you have full acsess to the Ubuntu system, and can test the two pulled down programs as you see fit. Use this command to run your jars "java -jar YOURJARNAME.jar" 🥇
 
-Remember to edit paths and folder names in the app.java, and from what repo it should download!
+Remember to edit paths and folder names in the app.java, and from what repo it should download! Currently creating a folder /app/target-repo inside the container. Target project is https://github.com/tblautenberg/DockerAutoPullTarget
 
 
 **** TODO ****
