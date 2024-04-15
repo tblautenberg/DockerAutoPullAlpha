@@ -11,19 +11,17 @@ Right now it utlizes maven shader plugin, and the following dependencies;
 
 You can acsess it via docker by building a image with:
 
-docker build -t jap (jap for java auto pull)
+docker build -t jap (jap for java auto pull) --> docker run -it --name jaap jap
 
-Then create a container with "docker run --name jaap jap" - this should run the docker auto puller and the program (only docker auto puller is currently working)
-
-OR you can run "docker run -it --name jaap jap /bin/bash" 
-
-Now you have full acsess to the Ubuntu system, and can test the two pulled down programs as you see fit. Use this command to run your jars "java -jar YOURJARNAME.jar" 🥇
+This will build the JavaDockerAutoPull, inside of the container, and run a bashscript to run it, and build/run the JAR from target-repo.
 
 Remember to edit paths and folder names in the app.java, and from what repo it should download! Currently creating a folder /app/target-repo inside the container. Target project is https://github.com/tblautenberg/DockerAutoPullTarget
+
+![Untitled Diagram drawio](https://github.com/tblautenberg/DockerAutoPullAlpha/assets/109878505/4614a6a7-178e-4f31-b7a6-9357837ebb36)
 
 
 **** TODO ****
 
-Make .sh file to run multiple commands when the container is started. Right now we only build the program via maven, and runs it to download target repo. We need to make it so we acutally also builds the pulled down repo into a fat jar, and runs it.
+Add more text to what happens - maybe also colors and emojies. Also clean the bashScript.sh file abit - needs some love atm.
 
 More UML :)
