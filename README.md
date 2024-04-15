@@ -20,8 +20,8 @@ Remember to edit paths and folder names in the app.java, and from what repo it s
 Small diagram of how it works.
 
 
+![Untitled Diagram drawio (1)](https://github.com/tblautenberg/DockerAutoPullAlpha/assets/109878505/b9e5fb3b-8972-419e-b01c-11a0810e7aa3)
 
-![Untitled Diagram drawio](https://github.com/tblautenberg/DockerAutoPullAlpha/assets/109878505/4614a6a7-178e-4f31-b7a6-9357837ebb36)
 
 
 **** TODO ****
