@@ -23,5 +23,15 @@ RUN mv target/JavaDockerContainerAutoPull-1.0-SNAPSHOT.jar /app
 # Set the working directory back to /app
 WORKDIR /app
 
+# Copy a script that runs the JAR and executes a bash command after it finishes
+COPY bashScript.sh /app/bashScript.sh
+
+# Give execute permissions to the script AND fix the bash file with extra scripts :3
+RUN chmod +x /app/bashScript.sh
+RUN apt-get update && apt-get install -y dos2unix
+RUN dos2unix /app/bashScript.sh
+
+
+
 # Specify the command to run on container startup
-CMD ["java", "-jar", "JavaDockerContainerAutoPull-1.0-SNAPSHOT.jar"]
+CMD ["/app/bashScript.sh"]
