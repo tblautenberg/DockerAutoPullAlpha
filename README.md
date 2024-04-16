@@ -17,6 +17,8 @@ This will build the JavaDockerAutoPull, inside of the container, and run a bashs
 
 Remember to edit paths and folder names in the app.java, and from what repo it should download! Currently creating a folder /app/target-repo inside the container. Default target project is https://github.com/tblautenberg/DockerAutoPullTarget
 
+Also remember to configure your POM.xml file of target repo to name XXXXXXX-1.0-SNAPSHOT.jar to RunMe-1.0-SNAPSHOT.jar
+
 Small diagram of how it works.
 
 
