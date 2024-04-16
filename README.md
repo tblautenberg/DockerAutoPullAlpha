@@ -11,7 +11,7 @@ Right now it utlizes maven shader plugin, and the following dependencies;
 
 You can acsess it via docker by building a image with:
 
-docker build -t jap (jap for java auto pull) --> docker run -it --name jaap jap
+"docker build -t jap ." --> "docker run -it --name jaap jap"
 
 This will build the JavaDockerAutoPull, inside of the container, and run a bashscript to run it, and build/run the JAR from target-repo.
 
