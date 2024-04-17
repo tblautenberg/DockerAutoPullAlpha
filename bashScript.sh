@@ -4,10 +4,10 @@
 echo "Current directory: $(pwd)"
 
 # Verify if the JAR file exists
-if [ -f "JavaDockerContainerAutoPull-1.0-SNAPSHOT.jar" ]; then
+if [ -f "Java-DAP-1.0-SNAPSHOT.jar" ]; then
     # Run the JAR file
     echo "Executing JAR file..."
-    java -jar JavaDockerContainerAutoPull-1.0-SNAPSHOT.jar
+    java -jar Java-DAP-1.0-SNAPSHOT.jar
     # Check the exit status of the previous command
     if [ $? -eq 0 ]; then
         echo "JAR execution finished successfully."

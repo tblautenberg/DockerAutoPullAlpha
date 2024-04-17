@@ -8,17 +8,17 @@ RUN apt-get update && \
 # Set the working directory
 WORKDIR /app
 
-# Copy the JavaDockerContainerAutoPull directory
-COPY JavaDockerContainerAutoPull /app/JavaDockerContainerAutoPull
+# Copy the Java-DAP directory
+COPY Java-DAP /app/Java-DAP
 
-# Change working directory to the JavaDockerContainerAutoPull directory
-WORKDIR /app/JavaDockerContainerAutoPull
+# Change working directory to the Java-DAP directory
+WORKDIR /app/Java-DAP
 
 # Build the Java project using Maven
 RUN mvn clean package
 
 # Move the built JAR file to the /app directory
-RUN mv target/JavaDockerContainerAutoPull-1.0-SNAPSHOT.jar /app
+RUN mv target/Java-DAP-1.0-SNAPSHOT.jar /app
 
 # Set the working directory back to /app
 WORKDIR /app
